@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra: Javascript Reforço</title>
+    <script>
+        negative=0
+        negativeSum=0
+        pares=[]
+        negativearray=[]
+        arraySoma=0
+        arraySomaParaMedia=0
+        arraySomado5=[]
+        arrayMedia=[]
+        media = 0
+        A = 0
+        contagemDeLetras=0
+        palavrasImpar=[]
+
+
+        function negativeNumber(array){
+            for (i=0; i<array.length; i++){
+                if(array[i]<0){
+                    negative = negative+1
+                }
+            }
+            return negative   
+        }
+
+        function negativeNumberSum(array){
+            for (i=0; i<array.length; i++){
+                if(array[i]<0){
+                    negativeSum = negativeSum+array[i];
+                }
+            }
+            return negativeSum   
+        }
+
+
+        function Pares(maxNumber){
+            for (i=0; i<maxNumber; i++){
+                if(i%2===0){
+                    pares = pares.concat(i);
+                }
+            }
+            return pares   
+        }
+
+
+        function negativeArray(array){
+            for (i=0; i<array.length; i++){
+                if(array[i]<0){
+                    negativearray = negativearray.concat(array[i]);
+                }
+            }
+            return negativearray   
+        }
+
+        function arraySum(array){
+            for (i=0; i<array.length; i++){
+                arraySoma=arraySoma+array[i];}
+
+            if(arraySoma>array.length){
+                return true }
+            else{return false} 
+        }
+
+        
+        function arrayPlus5(array){
+            for (i=0; i<array.length; i++){
+                arraySomado5 = arraySomado5.concat(array[i]+5);
+                
+            }
+            return arraySomado5   
+        }
+
+        function mediaArray(array){
+            for (i=0; i<array.length; i++){
+                arraySomaParaMedia=arraySomaParaMedia+array[i];}
+            media = arraySomaParaMedia/array.length
+            for (i2=0; i2<array.length; i2++){
+                if(array[i2]>media){
+                    arrayMedia = arrayMedia.concat(array[i2])}}
+            return arrayMedia
+        }
+
+
+        function letraA(palavra){
+            for (i=0; i<palavra.length; i++){
+                if(palavra[i]==="a"){
+                    A = A+1
+                }
+            }
+            return A   
+        }
+
+        function arrayContagem(array){
+            for (i=0; i<array.length; i++){
+                contagemDeLetras = contagemDeLetras + array[i].length
+                }
+            
+            return contagemDeLetras 
+        }
+
+        function encontrarStringImpar(frase){
+            fraseSplit= frase.split(" ")
+            for (i=0; i<fraseSplit.length; i++){
+                if(fraseSplit[i].length%2!=0){
+                    palavrasImpar = palavrasImpar.concat(fraseSplit[i]);}
+                }
+            return palavrasImpar
+            
+        }
+
+        function trocarPorZero(frase){
+            letraTrocada = frase.replaceAll("o","0")
+           
+            return letraTrocada}
+
+        function pParaMaiusculo(frase){
+        letraTrocada = frase.replaceAll("p","P")
+           
+        return letraTrocada}
+            
+            
+
+    
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <h1>Atividade Extra: Javascript reforço</h1>
+    <h2>(As funções javascript estão contidas no código desse html)</h2>
+    
+</body>
+</html>
